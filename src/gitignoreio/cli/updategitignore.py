@@ -1,4 +1,5 @@
 import click
+import idna.core
 import requests
 
 
@@ -13,9 +14,20 @@ import requests
 def cli(topics, local, output):
     topic_list = [line.strip() for line in topics.readlines()]
 
-    response = requests.get(
-        'https://www.gitignore.io/api/' + ','.join(topic_list),
-    )
+    for verify in (True, False):
+        try:
+            response = requests.get(
+                'https://www.gitignore.io/api/' + ','.join(topic_list),
+                verify=verify,
+            )
+        except idna.core.IDNAError as e:
+            click.echo('Trying without SSL verification because: {}'.format(
+                e.args[0],
+            ))
+            continue
+
+        break
+
     response.raise_for_status()
 
     output.write('# Local\n\n')
