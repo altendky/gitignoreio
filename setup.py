@@ -3,11 +3,15 @@ import setuptools
 import versioneer
 
 
+with open('README.rst') as f:
+    readme = f.read()
+
 setuptools.setup(
     name='gitignoreio',
     description="Update .gitignore from config and gitignore.io.",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
+    long_description=readme,
     author='Kyle Altendorf',
     author_email='sda@fstab.net',
     url='https://github.com/altendky/gitignoreio',
