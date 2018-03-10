@@ -15,7 +15,7 @@ setuptools.setup(
     package_dir={'': 'src'},
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
