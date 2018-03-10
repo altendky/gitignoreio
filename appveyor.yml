@@ -13,7 +13,7 @@ install:
   - virtualenv -p "%PYTHON%\\python.exe" "%VENV%"
   - "%VENV%\\Scripts\\activate"
   - pip install .
-#  - ps: Update-AppveyorBuild -Version "v$(python -c 'import sys; import graham; sys.stdout.write(graham.__version__)') b$Env:APPVEYOR_BUILD_NUMBER"
+  - ps: Update-AppveyorBuild -Version "v$(python -c 'import sys; import gitignoreio; sys.stdout.write(gitignoreio.__version__)') b$Env:APPVEYOR_BUILD_NUMBER"
 
 build_script:
   - if defined BUILD_WHEEL python setup.py bdist_wheel --universal
