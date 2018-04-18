@@ -10,6 +10,7 @@ setuptools.setup(
     name='gitignoreio',
     description="Update .gitignore from config and gitignore.io.",
     long_description=readme,
+    long_description_content_type='text/x-rst',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     author='Kyle Altendorf',
