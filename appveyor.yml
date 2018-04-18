@@ -6,9 +6,6 @@ environment:
       PYTHON: "C:\\Python36-x64"
       BUILD_WHEEL: 1
 
-init:
-  - echo "TOXENV- %TOXENV%"
-
 install:
   - virtualenv -p "%PYTHON%\\python.exe" "%VENV%"
   - "%VENV%\\Scripts\\activate"
