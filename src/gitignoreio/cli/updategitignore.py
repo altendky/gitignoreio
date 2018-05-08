@@ -1,3 +1,5 @@
+import textwrap
+
 import click
 import idna.core
 import requests
@@ -30,6 +32,13 @@ def cli(topics, local, output):
 
     response.raise_for_status()
 
-    output.write('# Local\n\n')
+    output.write(textwrap.dedent('''\
+    # DO NOT EDIT THIS GENERATED FILE
+    # Edit .gitignore.io and .gitignore.local
+    # Rebuild this file by running `gitignoreio`
+    
+    # Local
+    
+    '''))
     output.write(local.read().strip() + '\n\n')
     output.write(response.text)
