@@ -7,11 +7,11 @@ Maintain your .gitignore using gitignore.io.
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/gitignoreio.svg
    :alt: PyPI Version
-   :target: https://pypi.python.org/pypi/gitignoreio
+   :target: https://pypi.org/project/gitignoreio/
 
 .. |Pythons| image:: https://img.shields.io/pypi/pyversions/gitignoreio.svg
    :alt: supported Python versions
-   :target: https://pypi.python.org/pypi/gitignoreio
+   :target: https://pypi.org/project/gitignoreio/
 
 .. |Travis| image:: https://travis-ci.org/altendky/gitignoreio.svg?branch=master
    :alt: Travis build status
