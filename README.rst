@@ -6,7 +6,7 @@ gitignoreio
 Maintain your .gitignore using gitignore.io.
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/gitignoreio.svg
-   :alt: PyPI Version
+   :alt: PyPI version
    :target: https://pypi.org/project/gitignoreio/
 
 .. |Pythons| image:: https://img.shields.io/pypi/pyversions/gitignoreio.svg
@@ -22,5 +22,5 @@ Maintain your .gitignore using gitignore.io.
    :target: https://ci.appveyor.com/project/KyleAltendorf/gitignoreio
 
 .. |GitHub| image:: https://img.shields.io/github/last-commit/altendky/gitignoreio/master.svg
-   :alt: Source on GitHub
+   :alt: source on GitHub
    :target: https://github.com/altendky/gitignoreio
